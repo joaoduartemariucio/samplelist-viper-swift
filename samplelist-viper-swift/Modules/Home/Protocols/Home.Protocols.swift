@@ -14,9 +14,11 @@ extension Module.Home {
 
 protocol HomeViewToPresenterProtocol {
 
+    var title: String? { get }
     var view: HomePresenterToViewProtocol? { get set }
     var interactor: HomePresenterToInteractorProtocol? { get set }
     var router: HomePresenterToRouterProtocol? { get set }
+
     func startFetchingTasks()
     func showDetailsController(navigationController: UINavigationController)
     func showCreateNewTaskController(navigationController: UINavigationController)

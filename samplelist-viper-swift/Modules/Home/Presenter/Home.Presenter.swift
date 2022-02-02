@@ -12,6 +12,8 @@ extension Module.Home {
 
     class Presenter: Protocols.ViewToPresenter {
 
+        var title: String? { "My Todo" }
+
         var view: HomePresenterToViewProtocol?
         var interactor: HomePresenterToInteractorProtocol?
         var router: HomePresenterToRouterProtocol?
